@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <title>Página web</title>
+        <script src="https://kit.fontawesome.com/2b7dee48eb.js" crossorigin="anonymous"></script>
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');        
+        @font-face {
+            font-family: "kavoon";
+            src: url("fuentes/Kavoon-Regular.ttf");
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+        @font-face {
+            font-family: "chewy";
+            src: url("fuentes/Chewy-Regular.ttf");
+        }    
+            @import url('https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@100..900&display=swap');
+        @font-face {
+            font-family: "league spartan";
+            src: url("fuentes/LeagueSpartan-VariableFont_wght.ttf");
+        }    
+        body{
+            background-image: url(img/fondopaginaweb\ \(1\).png);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 0;
+            min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            font-family: "kavoon";
+        }
+        
+        header{
+            display: flex;
+            height: 200px;
+            background-color: #996BF1;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img{
+            width: 400px;
+            height: 200px;
+            margin-top:0px;
+        }
+        nav a{
+            font-weight: 600px;
+            padding-right: 30px;
+        }
+        nav a:hover{
+            color: aqua;
+        }
+
+        .titulo{
+            background-color: #FFE5F0;
+            text-align: center;
+        }
+        .titulo h1{
+            color:#171A4A;
+            font-family: "chewy";
+            font-size: 70px;
+        }
+        .testimonios-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+        .testimonio1, .testimonio2, .testimonio3 {
+    background-color: #FDCAE1;
+    width: 359px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.testimonio1 .entre img, .testimonio2 .entre img, .testimonio3 .entre img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            margin-right: -10px;
+        }
+.testimonio1 .comentario, .testimonio2 .comentario, .testimonio3 .comentario{
+    color: #1D1D1B;
+    font-family: "league spartan";
+    font-size: 18px;
+    text-align: center;
+    margin-top: -20px;
+    padding: 20px;
+ }
+.testimonio1 .img1 img, .testimonio2 .img1 img, .testimonio3 .img1 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.testimonio1 .nombre, .testimonio2 .nombre, .testimonio3 .nombre {
+    color: #0091FF;
+    font-family: "league spartan";
+    font-size: 18px;
+    text-align: center;
+    margin-top: -20px;
+    padding: 20px;
+ }
+
+.testimonio1 .img2 img, .testimonio2 .img2 img, .testimonio3 .img2 img {
+    width: 420px;
+    height: 170px;
+    margin-bottom: 10px;
+    margin-top: -80px;
+}
+
+.experiencia{
+    color: #171A4A;
+    text-align: center;
+    font-size: 70px;
+    font-family: "chewy";
+}
+
+form {
+    max-width: 1400px;
+    width: 1900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #DECEFF;
+    border-radius: 8px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #9879D9;
+}
+
+.campo input[type="text"],
+.campo input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.campoo input[type="submit"] {
+    background-color: white;
+    color: #9879D9;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.campoo input[type="submit"]:hover {
+    background-color: #FFE5F0;
+}
+.campoo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+        body, footer {
+    margin: 0;
+}
+footer {
+    background-color: #996BF1;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+.piedepagina {
+    background-color: #996BF1;
+    color: white; 
+    padding: 5px;
+    text-align: center;
+}
+.grupo1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+figure {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto; 
+    max-height: 250px; 
+    object-fit: cover; 
+}
+h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: "kavoon";
+    text-align: center;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.contact-info a {
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.contact-info p {
+    margin: 0;
+    font-family: "league spartan";
+}
+.red-social {
+    display: flex;
+    justify-content: center;
+}
+.red-social a {
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; 
+    padding: 10px;
+    font-family: "league spartan";
+}
+
+.copy small {
+    color: white;
+    font-size: 30px;
+}
+.piedepagina .grupo1 .box .red-social a:hover{
+            color: aqua;
+         }
+         .contact-info a:hover {
+            color: aqua;
+         }
+
+        
+ 
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+                    <img src="img/Logohome_paginaweb.png" alt="PetCare">
+        </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="equipomedico.html">Equipo Médico</a>
+                <a href="contactanos.html">Contáctanos</a>
+                <a href="testimonios.html">Testimonio</a>
+            </nav>
+        
+    </header>
+    <div class="titulo">
+        <h1>Finales felices en petcare ♡</h1>
+    </div>
+    <div class="testimonios-container">
+    <div class="testimonio1">
+        <div class="entre">
+        <img src="img/comillas.png">
+        </div>
+        <div class="comentario">
+        <p>Estupenda persona, super amable, muy profesional y amante de los animales. Un médico con vocación de servicio. Súper recomendada…!!!</p>
+        </div>
+    <div class="img1">
+        <img src="img/pedrolopez.jpeg">
+    </div>
+    <div class="nombre">
+    <p>PEDRO LOPEZ</p>
+    </div>
+    <div class="img2">
+    <img src="img/estrellas.png">
+    </div>
+</div>
+<div class="testimonio2">
+    <div class="entre">
+        <img src="img/comillas.png">
+        </div>
+    <div class="comentario">
+    <p>Muy buena consulta! tienen mucha paciencia y trata con amor a mi Lunita. Estoy muy feliz de ir a la veterinaria petcare, 100% recomendada. Muchísimas gracias!</p>
+    </div>
+    <div class="img1">
+    <img src="img/estefania.jpeg">
+    </div>
+    <div class="nombre">
+    <P>ESTEFANIA TELLEZ</P>
+    </div>
+    <div class="img2">
+    <img src="img/estrellas.png">
+    </div>
+</div>
+    <div class="testimonio3">
+        <div class="entre">
+            <img src="img/comillas.png">
+            </div>
+        <div class="comentario">
+     <p>Muy contento con la atención, explica claramente la situación de mi hijo y sus recomendaciones son muy claras y precisas. Lo mejor es que Rabito estuvo contento en la veterinaria</p>
+        </div>
+     <div class="img1">
+     <img src="img/edwinacero.jpeg">
+     </div>
+     <div class="nombre">
+     <P>EDWIN ACERO</P>
+     </div>
+     <div class="img2">
+     <img src="img/estrellas.png">
+     </div>
+    </div>
+    </div>
+
+<div class="experiencia">
+     <p>Déjanos saber tu experiencia 🖤</p>
+</div>
+
+<form action="procesar_formulario.php" method="POST">
+    <div class="campo">
+        <label for="comentario">Comentario*</label>
+        <input type="text" id="comentario" name="comentario" required>
+    </div>
+
+    <div class="campo">
+        <label for="nombre">Nombre*</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <div class="campo">
+        <label for="email">Correo electrónico*</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="campoo">
+        <input type="submit" value="Publicar comentario">
+    </div>
+</form>
+
+    
+
+<footer class="piedepagina">
+    <div class="grupo1">
+        <div class="box">
+            <figure>
+                    <img src="img/Logo_paginaweb.png" alt="PetCare">
+            </figure>
+        </div>
+        <div class="box">
+            <div class="letra">
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="contact-info">
+                <a href="#" class="fa fa-phone"></a>
+                <p>3208251410</p>
+            </div>
+            <div class="contact-info">
+                <a href="#" class="fa fa-map-marker"></a>
+                <p>Calle 60, Cra. 7, Bogotá</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="letra">
+                <h2>Síguenos</h2>
+            </div>
+            <div class="red-social">
+                <div class="red-social">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-envelope"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <small>&copy; Paula Torrijos 2024</small>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

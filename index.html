@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <title>Página web</title>
+        <script src="https://kit.fontawesome.com/2b7dee48eb.js" crossorigin="anonymous"></script>
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');        
+        @font-face {
+            font-family: "kavoon";
+            src: url("fuentes/Kavoon-Regular.ttf");
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+        @font-face {
+            font-family: "chewy";
+            src: url("fuentes/Chewy-Regular.ttf");
+        }    
+            @import url('https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@100..900&display=swap');
+        @font-face {
+            font-family: "league spartan";
+            src: url("fuentes/LeagueSpartan-VariableFont_wght.ttf");
+        }
+    
+        body{
+            background-image: url(img/fondopaginaweb\ \(1\).png);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 0;
+            min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            font-family: "kavoon";
+        }
+        
+        header{
+            display: flex;
+            height: 200px;
+            background-color: #996BF1;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img{
+            width: 400px;
+            height: 200px;
+            margin-top:0px;
+        }
+        nav a{
+            font-weight: 600px;
+            padding-right: 30px;
+        }
+        nav a:hover{
+            color: aqua;
+        }
+        .inicio{
+            position: relative;        
+            width: 820px;
+            height: 700px; 
+            background-color: #FDCAE1;
+            border-radius: 5%;
+            float: left;
+            top: 50px;
+            left: 30px;
+        }
+        .inicio h1{
+            color: #171A4A;
+            font-family: "chewy";
+            font-size: 100px;
+            text-align: left;
+            display: block;
+            padding-left: 60px;
+        }
+        .inicio p{
+            color: #32408C;
+            font-family: "league spartan";
+            font-size: 60px;
+            text-align: left;
+            display: block;
+            padding-left: 60px;
+        }
+        .perra {
+            position: relative;
+            width: 100%;
+            height: 550px;
+            text-align: right;
+            margin-top: -710px;
+}
+
+         .perra img {
+            width: 650px;
+            height: 700px; 
+            background-color: #DECEFF;
+            border-radius: 50%;
+            position: absolute; 
+            right: 20px; 
+            top: calc(80% - 50px);
+            transform: translateY(-50%);
+        }
+        .pugs{
+            position: relative;
+            width: 100%;
+            height: 550px;
+            text-align: left;
+        }
+        .pugs img{
+            width: 650px;
+            height: 700px; 
+            background-color: #FFE5F0;
+            border-radius: 50%;
+            position: absolute; 
+            left: 20px;
+            top: calc(95% + 70px);
+            transform: translateY(-50%);;
+        }
+       .cuerpo{
+        position: relative;        
+        width: 820px;
+        height: 600px; 
+        background-color: #996BF1;
+        border-radius: 5%;
+        float: right;
+        top: -320px;
+        right: -320px;
+        margin: 50px auto 0;
+        padding: 20px;
+        }
+        .cuerpo h1{
+            color: #171A4A;
+            font-family: "chewy";
+            font-size: 100px;
+            text-align: left;
+            display: block;
+            padding-left: 60px;
+        }
+        .cuerpo p{
+            color: #fff;
+            font-family: "league spartan";
+            font-size: 60px;
+            text-align: left;
+            display: block;
+            padding-left: 60px;
+        }
+
+        body, footer {
+    margin: 0;
+}
+footer {
+    background-color: #996BF1;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+.piedepagina {
+    background-color: #996BF1;
+    color: white; 
+    padding: 5px;
+    text-align: center;
+}
+.grupo1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+figure {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto; 
+    max-height: 250px; 
+    object-fit: cover; 
+}
+h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: "kavoon";
+    text-align: center;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.contact-info a {
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.contact-info p {
+    margin: 0;
+    font-family: "league spartan";
+}
+.red-social {
+    display: flex;
+    justify-content: center;
+}
+.red-social a {
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; 
+    padding: 10px;
+    font-family: "league spartan";
+}
+
+.copy small {
+    color: white;
+    font-size: 30px;
+}
+.piedepagina .grupo1 .box .red-social a:hover{
+            color: aqua;
+         }
+         .contact-info a:hover {
+            color: aqua;
+         }
+
+        
+ 
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+                    <img src="img/Logohome_paginaweb.png" alt="PetCare">
+        </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="equipomedico.html">Equipo Médico</a>
+                <a href="contactanos.html">Contáctanos</a>
+                <a href="testimonios.html">Testimonio</a>
+            </nav>
+        
+    </header>
+<div class="inicio">
+    <h1>Bienvenidos a petcare♡</h1>
+<p>Encuentra ayuda, guía y productos para tu mascota aquí. Estamos disponibles para ayudarte en todo lo que necesites.</p>
+</div>
+<div class="perra">
+    <img src="img/perra.png" alt="perra">
+</div>
+<div class="pugs">
+    <img src="img/pugs.png" alt="pugs">
+</div>
+<div class="cuerpo">
+    <h1>¿Que te podemos brindar?</h1>
+        <p>En nuestra veterinaria, cuidamos de tu mascota con tratamientos, medicamentos y más para su bienestar total.</p>
+</div>
+
+<footer class="piedepagina">
+    <div class="grupo1">
+        <div class="box">
+            <figure>
+                    <img src="img/Logo_paginaweb.png" alt="PetCare">
+            </figure>
+        </div>
+        <div class="box">
+            <div class="letra">
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="contact-info">
+                <a href="#" class="fa fa-phone"></a>
+                <p>3208251410</p>
+            </div>
+            <div class="contact-info">
+                <a href="#" class="fa fa-map-marker"></a>
+                <p>Calle 60, Cra. 7, Bogotá</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="letra">
+                <h2>Síguenos</h2>
+            </div>
+            <div class="red-social">
+                <div class="red-social">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-envelope"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <small>&copy; Paula Torrijos 2024</small>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

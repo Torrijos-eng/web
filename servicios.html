@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <title>Página web</title>
+        <script src="https://kit.fontawesome.com/2b7dee48eb.js" crossorigin="anonymous"></script>
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');        
+        @font-face {
+            font-family: "kavoon";
+            src: url("fuentes/Kavoon-Regular.ttf");
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+        @font-face {
+            font-family: "chewy";
+            src: url("fuentes/Chewy-Regular.ttf");
+        }    
+            @import url('https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@100..900&display=swap');
+        @font-face {
+            font-family: "league spartan";
+            src: url("fuentes/LeagueSpartan-VariableFont_wght.ttf");
+        }   
+        body{
+            background-image: url(img/fondopaginaweb\ \(1\).png);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 0;
+            min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            font-family: "kavoon";
+        }
+        
+        header{
+            display: flex;
+            height: 200px;
+            background-color: #996BF1;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img{
+            width: 400px;
+            height: 200px;
+            margin-top:0px;
+        }
+        nav a{
+            font-weight: 600px;
+            padding-right: 30px;
+        }
+        nav a:hover{
+            color: aqua;
+        }
+        .titulo{
+            background-color: #FFE5F0;
+            text-align: center;
+        }
+        .titulo h1{
+            color: #171A4A;
+            font-family: "chewy";
+            font-size: 70px;
+        }
+        .info{
+            background-color: #FDCAE1;
+            display: flex;
+            align-items: center;        
+        }
+        .info p{
+            color: #32408C;
+            font-family: "league spartan";
+            font-size: 60px;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .info .perro{
+            float: right;
+            margin-left: 60px;
+        }
+        .info .perro img{
+            width: 600px;
+            height: auto;
+        }
+        .servicios-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+}
+
+.consultas, .cirugias, .vacunas, .dental, .espacios {
+    background-color: #DECEFF;
+    width: 359px;
+    height: 265px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.consultas img, .cirugias img, .vacunas img, .dental img, .espacios img {
+    width: 217px;
+    height: 183px;
+    margin-bottom: 0 10px;
+}
+
+.consultas p, .cirugias p, .vacunas p, .dental p, .espacios p{
+    font-family: "chewy";
+    text-align: center;
+    align-content: flex-end;
+    color: #171A4A;
+    font-size: 24px; 
+    margin: 0;
+}
+.recomendaciones{
+    background-color: #FDCAE1;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    padding: 20px;
+}
+.recomendaciones .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    text-align: center
+}
+.recomendaciones h1{
+    color: #171A4A;
+    font-family: "chewy";
+    text-align: left;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+.recomendaciones p{
+    color: #9879D9;
+    font-family: "league spartan";
+    font-size: 60px;
+    text-align: left;
+    padding-left: 10px;
+}
+.recomendaciones .gato{
+            float: right;
+            margin-left: 60px;
+        }
+        .recomendaciones .gato img{
+            width: 600px;
+            height: auto;
+        }
+        
+
+        .contenidoco img{
+    width: 250px;
+    height: 250px;
+    border: 2px inset #aaa;
+}
+article{
+    padding: 10px 10px 30px;
+    background-color: white;
+    border-radius: 3px; 
+    display: inline-block;
+    margin: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 60%);
+    transition: all 350ms ease-in-out;
+    position: relative;
+    filter: blur(1px) saturate(50%);
+}
+article:nth-of-type(4n+4){
+    transform: rotate(7deg);
+}
+article:nth-of-type(4n+1){
+    transform: rotate(-9deg);
+}
+article:nth-of-type(4n-6){
+    transform: rotate(20deg);
+
+}
+article:nth-of-type(4n-1){
+    transform: rotate(-16deg);
+}
+article:hover{
+transform: rotate(0) scale(1.5,1.5);
+z-index: 10 ;
+filter: blur(0) saturate(100%);
+
+}
+footer{
+background: rgba(255, 255, 255, 0.3);
+padding: 20px}
+figcaption{
+    position: relative;
+    top: 14px  ;
+    color: rgba(0, 0, 0, 0.3);
+}
+article:hover figcaption{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+        body, footer {
+    margin: 0;
+}
+footer {
+    background-color: #996BF1;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+.piedepagina {
+    background-color: #996BF1;
+    color: white; 
+    padding: 5px;
+    text-align: center;
+}
+.grupo1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+figure {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto; 
+    max-height: 250px; 
+    object-fit: cover; 
+}
+h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: "kavoon";
+    text-align: center;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.contact-info a {
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.contact-info p {
+    margin: 0;
+    font-family: "league spartan";
+}
+.red-social {
+    display: flex;
+    justify-content: center;
+}
+.red-social a {
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; 
+    padding: 10px;
+    font-family: "league spartan";
+}
+
+.copy small {
+    color: white;
+    font-size: 30px;
+}
+.piedepagina .grupo1 .box .red-social a:hover{
+            color: aqua;
+         }
+         .contact-info a:hover {
+            color: aqua;
+         }
+
+        
+ 
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+                    <img src="img/Logohome_paginaweb.png" alt="PetCare">
+        </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="equipomedico.html">Equipo Médico</a>
+                <a href="contactanos.html">Contáctanos</a>
+                <a href="testimonios.html">Testimonio</a>
+            </nav>
+        </header>
+        <div class="titulo">
+            <h1>Nuestros servicios ✩</h1>
+        </div>
+        <div class="info">
+            <p>Te ofrecemos una amplia gama de servicios veterinarios pensados en ti y tus mascotas, asegurando su bienestar y calidad de vida.</p>
+            <div class="perro">
+            <img src="img/perroo.png">
+        </div>
+        </div>
+        <div class="servicios-container">
+            <div class="consultas">
+                <img src="img/consultas.png" alt="Imagen Consultas">
+                <p>Consultas veterinarias</p>
+            </div>
+            <div class="cirugias">
+                <img src="img/cirugias.png" alt="Imagen Cirugías">
+                <p>Cirugías menores</p>
+            </div>
+            <div class="vacunas">
+                <img src="img/vacunas.png" alt="Imagen Vacunas">
+                <p>Servicios de vacunación</p>
+            </div>
+        </div>
+        <div class="servicios-container">
+            <div class="dental">
+                <img src="img/dental.png" alt="Imagen Dental">
+                <p>Cuidado dental</p>
+            </div>
+            <div class="espacios">
+                <img src="img/espacios.png" alt="Imagen Espacios">
+                <p>Espacios libres de estres</p>
+            </div>
+        </div>
+        <div class="recomendaciones">
+            <div class="texto">
+                <h1>Recomendaciones para tu mascotas ♡</h1>
+            <p>Petcare, pensando en tu mascota y en ti, busca y recomienda las mejores marcas para su salud y bienestar.</p>
+        </div>
+            <div class="gato">
+            <img src="img/gato asombrado.png">
+        </div>
+        </div>
+
+    <div class="contenidoco">
+        <div class="comipet">
+        <article>
+            <img src="img/comida1.jpeg" alt="comida 1">
+            <figcaption>Credelio</figcaption>
+        </article>
+        <article>
+            <img src="img/comida2.jpeg" alt="comida 2">
+            <figcaption>Zeel ad us</figcaption>
+        </article>
+            <article>
+                <img src="img/comida3.jpeg" alt="comida 3">
+                <figcaption>Pro pac</figcaption>
+            </article>
+                <article>
+            <img src="img/comida4.jpeg" alt="comida 4">
+            <figcaption>Royal canin</figcaption>
+                </article>
+        <article>
+            <img src="img/comida5.jpeg" alt="comida 5">
+            <figcaption>Minino</figcaption>
+        </article>
+        <article>
+            <img src="img/comida6.jpeg" alt="comida 6">
+            <figcaption>Cat chow</figcaption>
+        </article>
+        <article>
+            <img src="img/comida7.jpeg" alt="comida 7">
+            <figcaption>Science diet</figcaption>
+        </article>
+        <article>
+            <img src="img/comida8.jpeg" alt="comida 8">
+            <figcaption>Original</figcaption>
+        </article>
+        <article>
+            <img src="img/comida9.jpeg" alt="comida 9">
+            <figcaption>Taste of the wild</figcaption>
+        </article>
+        <article>
+            <img src="img/comida10.jpg" alt="comida 10">
+            <figcaption>Naxpet</figcaption>
+        </article>
+        </div>
+    </div>
+
+
+<footer class="piedepagina">
+    <div class="grupo1">
+        <div class="box">
+            <figure>
+                    <img src="img/Logo_paginaweb.png" alt="PetCare">
+            </figure>
+        </div>
+        <div class="box">
+            <div class="letra">
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="contact-info">
+                <a href="#" class="fa fa-phone"></a>
+                <p>3208251410</p>
+            </div>
+            <div class="contact-info">
+                <a href="#" class="fa fa-map-marker"></a>
+                <p>Calle 60, Cra. 7, Bogotá</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="letra">
+                <h2>Síguenos</h2>
+            </div>
+            <div class="red-social">
+                <div class="red-social">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-envelope"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <small>&copy; Paula Torrijos 2024</small>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
